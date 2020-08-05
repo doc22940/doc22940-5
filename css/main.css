@@ -148,9 +148,9 @@ nav ul li a:hover {
     .checkbtn {
         display: block;
     }
-    nav{
+    nav {
         position: fixed;
-        top:0;
+        top: 0;
         z-index: 500;
     }
     nav ul {
@@ -228,6 +228,19 @@ nav ul li a:hover {
     grid-gap: 5rem;
 }
 
+@media (max-width: 858px) {
+
+    .projects-container {
+        margin-top: 200px;
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-gap: 100vw;
+    }
+}
+
 .project {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -242,11 +255,10 @@ nav ul li a:hover {
     .project {
         display: grid;
         grid-template-columns: none;
-        grid-template-rows: 50vw 50vw;
+        grid-template-rows: 50vw auto;
         grid-gap: 3rem;
         color: white;
         cursor: pointer;
-        margin-bottom: 5rem;
     }
 }
 
@@ -284,12 +296,31 @@ nav ul li a:hover {
     opacity: 0.8;
 }
 
+@media (max-width: 858px) {
+    .p-para {
+        font-size: 3vw;
+        font-family: 'Space Mono', monospace;
+        font-weight: bold;
+        opacity: 0.8;
+    }
+}
+
 .p-tags {
     position: absolute;
     bottom: 5px;
     font-family: 'Space Mono', monospace;
     opacity: 0.8;
     font-size: 1rem;
+}
+
+@media (max-width: 858px) {
+    .p-tags {
+        position: static;
+        margin-top: 4vw;
+        font-family: 'Space Mono', monospace;
+        opacity: 0.8;
+        font-size: 1rem;
+    }
 }
 
 .p-arrow {
