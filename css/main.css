@@ -474,7 +474,7 @@ footer ul li a:hover {
     color: #F0D575;
 }
 
-@media (max-width: 858px) {
+@media (max-width: 1000px) {
     footer ul li {
         display: none;
     }
