@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 html {
     font-size: 100%;
 }
@@ -9,7 +8,7 @@ img {
     height: auto;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -17,37 +16,69 @@ img {
     list-style: none;
 }
 
-body{
+.mr-1 {
+    margin-right: +10px;
+}
+
+.mr-2 {
+    margin-right: +20px;
+}
+
+.mr-3 {
+    margin-right: +30px;
+}
+
+.mr-4 {
+    margin-right: +40px;
+}
+
+.ml-1 {
+    margin-left: +10px;
+}
+
+.ml-2 {
+    margin-left: +20px;
+}
+
+.ml-3 {
+    margin-left: +30px;
+}
+
+.ml-4 {
+    margin-left: +40px;
+}
+
+body {
     background: #171717;
     font-family: 'Montserrat', sans-serif;
 }
 
-nav .logo{
-    margin-top: 2rem;
-    float: left;
-    margin-left: 4rem;
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: #171717;
 }
 
-@media (max-width:952px){
-    nav .logo{
-        height:20px;
-        width:20px;
-    }
+nav .logo {
+    padding-top: 2rem;
+    float: left;
+    padding-left: 10%;
 }
+
 nav ul {
     float: right;
     margin-right: 5rem;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     margin: 0 2rem;
     line-height: 6rem;
     font-size: 1rem;
 }
 
-@media (max-width: 952px){
-    nav ul li{
+@media (max-width: 952px) {
+    nav ul li {
         display: inline-block;
         margin: 0 2rem;
         line-height: 6rem;
@@ -55,16 +86,16 @@ nav ul li{
     }
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
     transition: all 0.5s ease;
 }
 
-nav ul li a:hover{
-    color: lightgray;
+nav ul li a:hover {
+    color: #F0D575;
 }
 
-.checkbtn{
+.checkbtn {
     font-size: 1.4rem;
     color: white;
     float: right;
@@ -75,31 +106,67 @@ nav ul li a:hover{
     display: none;
 }
 
-@media (max-width:858px){
-    .checkbtn{
+@media (max-width:858px) {
+    .checkbtn {
         display: block;
     }
-    nav ul{
+    nav ul {
         position: fixed;
         width: 100%;
-        height:100vh;
-        background: #171717;
-        top:100px;
-        left:-100%;
+        height: 100vh;
+        background-color: #171717;
+        top: 80px;
+        left: -100%;
         text-align: center;
         transition: all .5s ease;
     }
-
-    nav ul li{
+    nav ul li {
         display: block;
         font-size: 1rem;
     }
-    
-    #check:checked ~ ul{
-        left:0;
+    #check:checked~ul {
+        left: 0;
     }
 }
 
-#check{
+#check {
     display: none;
+}
+
+.intro-container {
+    color: white;
+    font-size: 2.6rem;
+    margin-right: 40%;
+    margin-left: 10%;
+    margin-top: 180px;
+}
+
+@media (max-width: 800px) {
+    .intro-container {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 858px) {
+    .intro-container {
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-container {
+        font-size: 28px;
+    }
+}
+
+.intro-firstline {
+    margin-bottom: 2.6rem;
+}
+
+.intro-para {
+    margin-bottom: 2.6rem;
+}
+
+.intro-footer {
+    font-size: 1rem;
 }
