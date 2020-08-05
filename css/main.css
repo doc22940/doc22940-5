@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 @font-face {
     font-family: grotesk;
-    src: url('/fonts/hk-grotesk/HKGrotesk-Regular.otf');
+    src: url('./fonts/hk-grotesk/HKGrotesk-Regular.otf');
 }
 
 html {
