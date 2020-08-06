@@ -404,11 +404,28 @@ nav ul li a:hover {
     line-height: 2.8rem;
 }
 
+@media (max-width: 858px) {
+    .intro-contact {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
+
 .contact-para {
     font-family: 'Space Mono', monospace;
     font-size: 1rem;
     margin-top: 30px;
     line-height: 2rem;
+}
+
+@media (max-width: 858px) {
+    .contact-para {
+        font-family: 'Space Mono', monospace;
+        font-size: 0.8rem;
+        margin-top: 30px;
+        line-height: 1.6rem;
+    }
 }
 
 .contact-right {
@@ -420,6 +437,12 @@ nav ul li a:hover {
     top: 0;
     right: 0;
     font-size: 1.5rem;
+}
+
+@media (max-width: 858px) {
+    .sociallinks {
+        font-size: 1rem;
+    }
 }
 
 .sociallinks a {
