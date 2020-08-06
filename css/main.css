@@ -309,6 +309,18 @@ nav ul li a:hover {
     font-family: 'Space Mono', monospace;
 }
 
+@media (max-width: 858px) {
+    .p-casestudy {
+        margin-top: 1rem;
+        margin-bottom: 1.2rem;
+        font-size: 0.8rem;
+        font-family: 'Space Mono', monospace;
+    }
+
+}
+
+
+
 .p-para {
     font-size: 1.25rem;
     font-family: 'Space Mono', monospace;
