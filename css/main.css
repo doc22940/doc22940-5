@@ -6,6 +6,11 @@
     src: url('/fonts/hk-grotesk/HKGrotesk-Regular.otf');
 }
 
+@font-face {
+    font-family: alex;
+    src: url('/fonts/AlexBrush-Regular.ttf');
+}
+
 html {
     font-size: 100%;
 }
@@ -76,7 +81,7 @@ a:hover {
 
 body {
     background: #171717;
-    font-family: 'Montserrat', sans-serif;
+    font-family: alex;
     /*font-family: grotesk;*/
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
