@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: alex;
-    src: url('/fonts/AlexBrush-Regular.ttf');
+    src: url('./fonts/AlexBrush-Regular.ttf');
 }
 
 html {
