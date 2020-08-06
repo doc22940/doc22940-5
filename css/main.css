@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: grotesk;
-    src: url('/fonts/hk-grotesk/HKGrotesk-Regular.otf');
+    src: url('../fonts/hk-grotesk/HKGrotesk-Regular.otf');
 }
 
 html {
@@ -76,8 +76,7 @@ a:hover {
 
 body {
     background: #171717;
-    font-family: 'Montserrat', sans-serif;
-    /*font-family: grotesk;*/
+    font-family: grotesk;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
