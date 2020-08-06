@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 @font-face {
     font-family: grotesk;
     src: url('/fonts/hk-grotesk/HKGrotesk-Regular.otf');
@@ -76,7 +77,7 @@ a:hover {
 body {
     background: #171717;
     font-family: 'Montserrat', sans-serif;
-    font-family: grotesk;
+    /*font-family: grotesk;*/
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
