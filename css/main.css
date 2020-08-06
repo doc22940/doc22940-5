@@ -219,54 +219,47 @@ nav ul li a:hover {
 }
 
 .projects-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-row-gap: 50px;
     margin-top: 200px;
     margin-right: 12%;
     margin-left: 12%;
     margin-bottom: 100px;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-gap: 1vw;
 }
 
-@media (max-width: 858px) {
-    .projects-container {
-        margin-top: 200px;
-        margin-right: 12%;
-        margin-left: 12%;
-        margin-bottom: 100px;
+@media only screen and (min-width: 940px) {
+    .project {
         display: grid;
-        grid-template-rows: 1fr;
-        grid-gap: 80vw;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem;
+        height: max(300px, 24vw);
+        color: white;
+        cursor: pointer;
+        margin-bottom: 100px;
     }
 }
 
-@media (max-width: 700px) {
-    .projects-container {
-        margin-top: 200px;
-        margin-right: 12%;
-        margin-left: 12%;
-        margin-bottom: 100px;
+
+@media only screen and (min-width: 858px) and (max-width: 940px) {
+    .project {
         display: grid;
-        grid-template-rows: 1fr;
-        grid-gap: 90vw;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem;
+        height: 400px;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 100px;
     }
 }
 
-.project {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
-    height: 22vw;
-    color: white;
-    cursor: pointer;
-    margin-bottom: 5rem;
-}
+
 
 @media (max-width: 858px) {
     .project {
         display: grid;
-        grid-template-columns: none;
-        grid-template-rows: 50vw auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40vw auto;
         grid-gap: 3rem;
         color: white;
         cursor: pointer;
@@ -287,10 +280,29 @@ nav ul li a:hover {
     font-weight: bold;
     border-bottom: 1.5px solid #FFFFFF;
     padding-bottom: 1rem;
+    position: relative;
+}
+
+@media (max-width: 858px) {
+    .p-title {
+        font-size: max(16px, 5vw);
+    }
 }
 
 .p-title .p-num {
     float: right;
+}
+
+@media (max-width: 940px) {
+    .p-title .p-num {
+        float: none;
+    }
+}
+
+@media (max-width: 858px) {
+    .p-title .p-num {
+        float: right;
+    }
 }
 
 .p-casestudy {
@@ -307,21 +319,15 @@ nav ul li a:hover {
     opacity: 0.8;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .p-para {
-        font-size: 1.5vw;
-        font-family: 'Space Mono', monospace;
-        font-weight: bold;
-        opacity: 0.8;
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 858px) {
     .p-para {
-        font-size: 3vw;
-        font-family: 'Space Mono', monospace;
-        font-weight: bold;
-        opacity: 0.8;
+        font-size: max(14px, 2.2vw);
     }
 }
 
@@ -332,25 +338,16 @@ nav ul li a:hover {
     opacity: 0.8;
     font-size: 1rem;
     padding-right: 40px;
-}
-
-@media (max-width: 1300px) {
-    .p-tags {
-        position: static;
-        margin-top: 4vw;
-        font-family: 'Space Mono', monospace;
-        opacity: 0.8;
-        font-size: 1.2vw;
-    }
+    margin-top: 50px;
 }
 
 @media (max-width: 858px) {
     .p-tags {
         position: static;
-        margin-top: 4vw;
+        margin-top: 5vw;
         font-family: 'Space Mono', monospace;
         opacity: 0.8;
-        font-size: 1rem;
+        font-size: max(2vw, 12px);
         padding-right: 10vw;
     }
 }
@@ -376,12 +373,13 @@ nav ul li a:hover {
 
 @media (max-width: 858px) {
     .p-arrow {
-        position: absolute;
-        bottom: -5;
-        right: 0;
         font-size: 2rem;
-        color: #F0D575;
-        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .p-arrow {
+        font-size: 1.2rem;
     }
 }
 
@@ -392,18 +390,6 @@ nav ul li a:hover {
     margin-left: 12%;
     margin-top: 5vw;
     margin-bottom: 20vw;
-}
-
-@media (max-width: 858px) {
-    .contact-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-right: 12%;
-        margin-left: 12%;
-        margin-top: 100vw;
-        margin-bottom: 20vw;
-        grid-gap: 5rem;
-    }
 }
 
 .intro-contact {
